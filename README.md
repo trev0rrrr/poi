@@ -8,7 +8,7 @@
 poi名称 | 操作对象
 ---- | ----
 HSSF | Excel xls格式
-XSSF | Excel ooxml格式
+XSSF | Excel ooxml格式(xlsx)
 HWPF | Word doc格式
 HSLF | ppt
 HDGF | visio
@@ -29,4 +29,11 @@ HSSFHeader      | sheet页眉
 HSSFFooter      | sheet页脚
 HSSFCellStyle   | 单元格样式
 
-
+## get started
+    创建一个excel实例
+    XSSFWorkbook workbook = new XSSFWorkbook();
+    创建一个excel页
+    XSSFSheet sheet = workbook.createSheet("sheet1");
+    创建一个excel 单元格
+    Row row = sheet.createRow(0);
+    
